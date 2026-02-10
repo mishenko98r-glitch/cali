@@ -1,10 +1,11 @@
+a = float(input("Введите первое число: "))
+d = float(input("Введите второе число: "))
 def plus(*args):
     print(args)
     result = 0
     for numder in args:
         result += numder
     return result
-print(plus(1, 2))
 
 def delenie(*args):
     print(args)
@@ -12,8 +13,6 @@ def delenie(*args):
     for numder in args:
         result += numder
     return result
-print(delenie(1, 2))
-
 
 def misnys(*args):
     print(args)
@@ -22,21 +21,17 @@ def misnys(*args):
         result += numder
     return result
 
-
-print(misnys(1, 2))
-
 def fgfh(*args):
     print(args)
     result = 0
     for numder in args:
         result += numder
     return result
-print(fgfh(21, 55))
+
 
 
 def cfll():
-    a = float(input("Введите первое число: "))
-    d = float(input("Введите второе число: "))
+
 
     print("\nВыберите операцию:")
     print("1 - Сложение")
