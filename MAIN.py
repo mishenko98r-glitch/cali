@@ -14,12 +14,8 @@ def delenie(*args):
         result += numder
     return result
 
-def misnys(*args):
-    print(args)
-    result = 0
-    for numder in args:
-        result += numder
-    return result
+def misnys(a, d):
+    return a - d
 
 def fgfh(*args):
     print(args)
@@ -27,8 +23,6 @@ def fgfh(*args):
     for numder in args:
         result += numder
     return result
-
-
 
 def cfll():
 
@@ -38,6 +32,7 @@ def cfll():
     print("2 - Вычитание")
     print("3 - Деление")
     print("4 - умножение ")
+    print("5 - корень")
     o = input("Введите номер операции 1-3: ")
 
     if o == "1":
@@ -51,6 +46,9 @@ def cfll():
         print(f"\nРезультат деления: {a} / {d} = {result}")
     elif o == "4":
         result = fgfh(a, d)
+        print(f"\nРезультат деления: {a} * {d} = {result}")
+    elif o == "5":
+        result = fg(a, d)
         print(f"\nРезультат деления: {a} * {d} = {result}")
 
 cfll()
