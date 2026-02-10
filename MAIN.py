@@ -1,9 +1,38 @@
-def plus(a, d):
-    return a + d
-def plus(a, d):
-   return a + d
-def misnys(a, d):
-   return a - d
+def plus(*args):
+    print(args)
+    result = 0
+    for numder in args:
+        result += numder
+    return result
+print(plus(1, 2))
+
+def delenie(*args):
+    print(args)
+    result = 0
+    for numder in args:
+        result += numder
+    return result
+print(delenie(1, 2))
+
+
+def misnys(*args):
+    print(args)
+    result = 0
+    for numder in args:
+        result += numder
+    return result
+
+
+print(misnys(1, 2))
+
+def fgfh(*args):
+    print(args)
+    result = 0
+    for numder in args:
+        result += numder
+    return result
+print(fgfh(21, 55))
+
 
 def cfll():
     a = float(input("Введите первое число: "))
@@ -13,6 +42,7 @@ def cfll():
     print("1 - Сложение")
     print("2 - Вычитание")
     print("3 - Деление")
+    print("4 - умножение ")
     o = input("Введите номер операции 1-3: ")
 
     if o == "1":
@@ -24,5 +54,8 @@ def cfll():
     elif o == "3":
         result = delenie(a, d)
         print(f"\nРезультат деления: {a} / {d} = {result}")
+    elif o == "4":
+        result = fgfh(a, d)
+        print(f"\nРезультат деления: {a} * {d} = {result}")
 
 cfll()
